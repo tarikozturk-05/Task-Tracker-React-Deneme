@@ -20,15 +20,15 @@ const AddTask = ({addTask}) => {
  
         <form onSubmit={handleSubmit} action="" className='container'>
         <label htmlFor="text">Task</label> <br />
-        <input type="text" id='text' onChange={(e)=> setText(e.target.value)} value={text} placeholder='AddTask'/>
+        <input type="text" id='text' onChange={(e)=> setText(e.target.value)} value={text} placeholder='AddTask' required />
 
 <br />
 <br />
         <label htmlFor="dayTime">Day & Time</label> <br />
-        <input type="date" id='dayTime' onChange={(e)=> setDay(e.target.value)} value={day} placeholder='Add Day & Time'/>
+        <input type="date" id='dayTime' onChange={(e)=> setDay(e.target.value)} value={day} placeholder='Add Day & Time' required/>
 <br />
 <br />
-        <input type="submit" value="saveTask"/>
+        <input id='save' type="submit" value="saveTask"/>
 </form>
     
   )

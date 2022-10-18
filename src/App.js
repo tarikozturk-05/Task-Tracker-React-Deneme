@@ -8,8 +8,8 @@ function App() {
     const [showAddTask, setShowAddTask] = useState(true)
     //? ************
     const [tasks, setTasks] = useState([{
-      text:"Do Homework",
-      day:"11 11 2023",
+      text:"Go To Bed And Sleep",
+      day:"18-10-2022",
       id:1,
       isDone:false
     }])
