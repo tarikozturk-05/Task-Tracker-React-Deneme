@@ -1,8 +1,24 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-const Task = () => {
+const Task = ({item}) => {
+
+const [click, setClick] = useState(false)
+  
+
+
   return (
-    <div>Task</div>
+   
+      
+        <div onClick={()=> setClick(!click)} >
+          
+          {click ?(<div> <h2  style={{ textDecoration:"line-through"}}>{item.text}</h2>
+        <p>{item.day}</p></div>):
+        (<div> <h2 >{item.text}</h2>
+        <p>{item.day}</p></div>)
+          }
+        </div>
+      
+  
   )
 }
 
